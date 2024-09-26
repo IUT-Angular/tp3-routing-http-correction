@@ -9,8 +9,7 @@ import { BookService } from '../../services/book-service'
   selector: 'app-book-list',
   standalone: true,
   imports: [NgFor, DatePipe, RouterModule],
-  templateUrl: './book-list.component.html',
-  styleUrl: './book-list.component.css'
+  templateUrl: './book-list.component.html'
 })
 export class BookListComponent {
   books: Book[] = [];

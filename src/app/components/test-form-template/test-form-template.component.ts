@@ -5,8 +5,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-test-form-template',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './test-form-template.component.html',
-  styleUrl: './test-form-template.component.css'
+  templateUrl: './test-form-template.component.html'
 })
 export class TestFormTemplateComponent {
   book = {

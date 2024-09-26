@@ -8,8 +8,7 @@ import { MatMenuModule } from '@angular/material/menu';
   selector: 'app-book-menu',
   standalone: true,
   imports: [RouterModule, MatButtonModule, MatMenuModule],
-  templateUrl: './book-menu.component.html',
-  styleUrl: './book-menu.component.css'
+  templateUrl: './book-menu.component.html'
 })
 export class BookMenuComponent {
 
