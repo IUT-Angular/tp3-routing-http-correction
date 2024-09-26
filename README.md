@@ -9,7 +9,7 @@
     - /books => affichage de la liste des livres
     - /book/:id => affichage du détail du livre passé en paramètre (lien à afficher dans la liste)
     - /book/add => affichage du formulaire d'ajout d'un livre
-4. En plus du stub, charger la liste des livres via l'URL suivante : [[https://664ba07f35bbda10987d9f99.mockapi.io/api/books](https://66e8848bb17821a9d9dcf68c.mockapi.io/books)]([https://66e8848bb17821a9d9dcf68c.mockapi.io/books](https://66e8848bb17821a9d9dcf68c.mockapi.io/books))
+4. En plus du stub, charger la liste des livres via l'URL suivante : https://66e8848bb17821a9d9dcf68c.mockapi.io/books
 5. A la validation du formulaire, faire un ajout via l'API précédente.
 
 ## Correction
