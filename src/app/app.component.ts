@@ -28,7 +28,9 @@ export class AppComponent {
     this.bookService.addBook($event);
   }
 
-  onActivate(componentRef: any) {
+  onActivate(componentRef: Event): void {
+    console.log('onActivate', componentRef);
+
     if(componentRef instanceof BookFormComponent) {
       componentRef.addBookEvent.subscribe((newBook: Book) => {
         this.addBook(newBook);

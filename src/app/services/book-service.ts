@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 import { BOOKS } from "../datas/books.stub";
 import { Book } from "../models/book.model";
@@ -32,7 +32,7 @@ export class BookService {
     }
 
     private addBookToLocal(book: Book): void{
-        console.log('test');
+        console.log('addBookToLocal', book);
         if(book.id === 0){
             book.id = Math.max(...this.books.map(b => b.id)) + 1;
         }
