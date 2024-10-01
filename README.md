@@ -28,7 +28,7 @@ A noter : par défaut les packages `karma` et `jasmine` sont installés. Il sont
 ## Annexes
 
 1. https://angular.dev/guide/routing/common-router-tasks
-2. https://docs.angular.lat/guide/http
+2. https://angular.dev/guide/http
 
 ## Bonnes pratiques
 
