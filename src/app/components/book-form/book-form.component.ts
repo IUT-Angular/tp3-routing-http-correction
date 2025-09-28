@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Book } from '../../models/book.model';
+import { Book } from '../../models/book';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -37,7 +37,7 @@ export class BookFormComponent {
 
   addBook() {    
     if (this.bookForm.invalid) {
-      console.log("ERREUR");
+      console.error("Error addBook");
       return;
     }
     

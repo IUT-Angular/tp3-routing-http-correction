@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 import { BOOKS } from "../datas/books.stub";
-import { Book } from "../models/book.model";
+import { Book } from "../models/book";
 
 @Injectable()
 export class BookService {

@@ -1,7 +1,9 @@
-<h2>Book list</h2>
+<h2>Livres</h2>
 
+<p>Voici la liste des livres : </p>
 <ul>
-    <li *ngFor="let book of books">
-        <a routerLink="/book/{{ book.id }}">{{ book.title }}</a>
-    </li>
+    @for(book of books; track book.id) {
+        <!--  {{ book.title }} par {{ book.author }} ({{ book.publicationDate | date:'EEEE dd MMMM yyyy' }})-->
+        <li>{{ book.title }} par {{ book.author }} ({{ book.publicationDate | date:'fullDate' }})</li>
+    }
 </ul>

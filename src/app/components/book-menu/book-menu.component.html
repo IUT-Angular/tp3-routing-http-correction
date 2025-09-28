@@ -1,6 +1,7 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <a mat-menu-item routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Accueil</a>
-  <a mat-menu-item routerLink="/books" routerLinkActive="active" ariaCurrentWhenActive="page">Liste des livres</a>
-  <a mat-menu-item routerLink="/book/add" routerLinkActive="active" ariaCurrentWhenActive="page">Ajouter un livre</a>
-</mat-menu>
+<nav>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="/books" routerLinkActive="active" ariaCurrentWhenActive="page">Liste des livres</a>
+      <a mat-menu-item routerLink="/book/add" routerLinkActive="active" ariaCurrentWhenActive="page">Ajouter un livre</a>
+    </mat-menu>
+</nav>

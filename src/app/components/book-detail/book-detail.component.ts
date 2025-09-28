@@ -1,14 +1,14 @@
 import { Component} from '@angular/core';
-import { UpperCasePipe, DatePipe, NgIf} from '@angular/common';
+import { UpperCasePipe, DatePipe } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
-import { Book } from '../../models/book.model';
+import { Book } from '../../models/book';
 import { BookService } from '../../services/book-service';
 
 @Component({
   standalone: true,
   selector: 'app-book-detail',
-  imports: [DatePipe, UpperCasePipe, NgIf],
+  imports: [DatePipe, UpperCasePipe],
   templateUrl: './book-detail.component.html',
   styles: ``
 })

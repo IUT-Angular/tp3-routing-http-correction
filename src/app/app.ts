@@ -1,29 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BookListComponent } from './components/book-list/book-list.component';
+import { BookFormComponent } from './components/book-form/book-form.component';
+import { BookService } from './services/book-service';
+import { Book } from './models/book';
+import { BookMenuComponent } from './components/book-menu/book-menu.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { BookFormComponent } from './components/book-form/book-form.component';
-import { BookListComponent } from './components/book-list/book-list.component';
-import { BookMenuComponent } from './components/book-menu/book-menu.component';
-
-
-import { BookService } from './services/book-service';
-import { Book } from './models/book.model';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, BookListComponent, BookFormComponent, BookMenuComponent, HttpClientModule],
-  templateUrl: './app.component.html',
+  imports: [RouterOutlet, BookMenuComponent, HttpClientModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css',
   providers: [
     BookService
   ]
 })
-export class AppComponent {
-  title = 'angular-tp2-correct';
+export class App {
+  protected readonly title = signal('tp2-form-matangular-correction');
 
+  // Injection de dépendance du service BookService
   constructor(protected bookService: BookService){ }
-  
+
   addBook($event: Book): void {
     this.bookService.addBook($event);
   }
