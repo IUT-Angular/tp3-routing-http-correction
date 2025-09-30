@@ -23,7 +23,7 @@ export class BookService {
     }
 
     public getBookById(id: number): Book | undefined{
-        return this.books.find(b => b.id === id);
+        return this.books.find(b => b.id === Number(id));
     }
 
     public addBook(book: Book): void{
